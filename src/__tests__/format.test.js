@@ -79,4 +79,8 @@ describe('format.js', () => {
     // Social Security number
     expect(format('365038704', '###-##-####')).toBe('365-03-8704');
   });
+
+  it('should allow turkish chars', () => {
+    expect(format('TÜRKçeTesTİ', 'AAAAAAAAAAA')).toBe('TÜRKçeTesTİ');
+  });
 });

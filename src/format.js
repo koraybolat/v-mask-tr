@@ -47,10 +47,10 @@ export default function (text, wholeMask) {
         /\d/.test(char) ? newText += char : x = 0;
         break;
       case 'A':
-        /[a-z]/i.test(char) ? newText += char : x = 0;
+        /[a-zıİğüşöç]/i.test(char) ? newText += char : x = 0;
         break;
       case 'N':
-        /[a-z0-9]/i.test(char) ? newText += char : x = 0;
+        /[a-zıİğüşöç0-9]/i.test(char) ? newText += char : x = 0;
         break;
       // Skips testing if optional field is specified
       case '?':
